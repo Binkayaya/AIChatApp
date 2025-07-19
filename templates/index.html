@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StanGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 100px; }
+        input { max-width: 600px; margin: auto; }
+        button { padding: 10px 20px; max-width: 200px; margin: auto;}
+    </style>
+</head>
+<body>
+    <h1>Welcome to StanGPT</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="What should I call you?" required />
+        <br><br>
+        <button type="submit">Start Chat</button>
+    </form>
+</body>
+</html>

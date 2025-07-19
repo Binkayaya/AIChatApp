@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StanGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { font-family: Arial; margin: 50px; }
+        .chatbox { max-width: 600px; margin: auto; }
+        textarea, input { width: 100%; padding: 10px; margin-top: 10px; }
+        .bot { color: black; }
+        .user { color: black; }
+    </style>
+</head>
+<body>
+    <div class="chatbox">
+        <h1>StanGPT</h1>
+        {% if user_message %}
+            <div class="message-container user-message"><strong>{{ username }}:</strong> {{ user_message }}</div>
+        {% endif %}
+        {% if bot_response %}
+            <div class="message-container bot-message"><strong>Gemini:</strong> {{ bot_response }}</div>
+        {% endif %}
+
+        <form method="POST">
+            <textarea name="message" placeholder="Hi {{ username }}, what do you seek?" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>

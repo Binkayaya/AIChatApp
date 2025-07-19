@@ -1,0 +1,68 @@
+/* General resets */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #1558c0;
+}
+
+.message-container {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.user-message {
+    background-color: #e8f0fe;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f3f4;
+    text-align: left;
+}
